@@ -1,0 +1,113 @@
+.footer {
+  width: 100%;
+  margin: auto;
+  background-color: #F5F4E9;
+}
+
+.footer_frame {
+  /* border: 1px solid black; */
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 20px 120px;
+  background-color: #FBFBF6;
+  border-radius: 80px 80px 0px 0px;
+  border-top: 1px solid #DEDCBF;
+}
+
+.footer .footer_left {
+  display: flex;
+  align-items: center;
+}
+
+.footer .footer_left .footer_navlist {
+  display: flex;
+  align-items: start;
+}
+
+/* ========== Logo area ========== */
+
+.footer_left .logo img {
+  vertical-align: middle;
+  height: 120px;
+  width: 111px;
+}
+
+/* ========== nav area ========== */
+.footer .footer_nav {
+  /* border: 1px solid black; */
+  list-style: none;
+}
+
+.footer .footer_nav a {
+  /* border: 1px solid black; */
+  display: block;
+  text-decoration: none;
+  margin: 0 20px;
+  position: relative;
+  padding: 0px;
+}
+
+.footer .footer_nav .title a {
+  font-size: 16px;
+  color: #0C794D;
+  border-bottom: 2px dotted #0C794D;
+  font-weight: bold;
+}
+
+.footer .footer_nav .list a {
+  font-size: 14px;
+  color: #464646;
+  overflow: hidden;
+}
+
+.footer .footer_nav li {
+  /* border: 1px solid black; */
+  margin-bottom: 14px;
+}
+
+/* ========== nav hover area ========== */
+.footer .footer_nav .list a span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  transform: translateX(-100%);
+  transition: transform 300ms ease;
+}
+
+.footer .footer_nav .list a span::before {
+  display: inline-block;
+  content: attr(data-content);
+  transform: translateX(100%);
+  transition: transform 300ms ease;
+  font-weight: bold;
+}
+
+.footer .footer_left .list a span::before {
+  color: #DB5331;
+}
+
+.footer .footer_right .list a span::before {
+  color: #464646;
+}
+
+.footer .footer_nav .list a:hover span {
+  transform: translateX(0);
+}
+
+.footer .footer_nav .list a:hover span::before {
+  transform: translateX(0);
+}
+
+/* ========== 免責聲明 area ========== */
+.footer_text {
+  /* border: 1px solid black; */
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  padding: 10px 0px;
+  color: white;
+  background-color: #949494;
+}
