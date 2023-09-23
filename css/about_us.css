@@ -1,0 +1,101 @@
+.about_us_section1 {
+  height: calc(100vh - 70px);
+  display: grid;
+  place-items: center;
+  background-color: #fffefc;
+}
+
+.about_us_section2 {
+  padding: 0px 160px 100px;
+  background-color: #fffefc;
+  color: #464646;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about_us_section3_outline {
+  width: 100%;
+  background-color: #fffefc;
+}
+
+.about_us_section3 {
+  padding: 100px 160px 150px;
+  background-color: #FBFBF6;
+  border-radius: 80px 80px 0px 0px;
+  border-top: 1px solid #DEDCBF;
+}
+
+/* =========== section1 =============== */
+
+.about_us_section1 .chopsticks {
+  position: absolute;
+  right: 0%;
+  top: 15%;
+}
+
+.about_us_section1 .slogan {
+  position: absolute;
+  top: 45%;
+}
+
+.about_us_section1 .pack {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+}
+
+@supports (animation-timeline: scroll()) {
+  section {
+    view-timeline-name: --section;
+  }
+
+  :is(.chopsticks, .pack, .slogan) {
+    animation: slide both linear;
+    animation-timeline: --section;
+    animation-range: exit 0 exit 25%;
+  }
+
+  .about_us_section1 .chopsticks {
+    --x: 50%;
+    --y: 100%;
+    --opacity: 0;
+  }
+
+  .about_us_section1 .slogan {
+    --y: 600%;
+  }
+
+  .about_us_section1 .pack {
+    --x: -100%;
+    --y: 100%;
+    --opacity: 0;
+  }
+
+  @keyframes slide {
+    to {
+      translate: var(--x, 0) var(--y, 0);
+      opacity: var(--opacity, 1);
+      scale: var(--scale, 1);
+    }
+  }
+}
+
+/* =========== section2 =============== */
+
+.about_us_section2 h1 {
+  margin-top: 50px;
+}
+
+.about_us_section2 p {
+  font-size: 16px;
+  line-height: 28px;
+  margin: 0;
+}
+
+.about_us_section2 img {
+  height: 244px;
+  width: 226px;
+  margin-top: 50px;
+}
+
+/* =========== section3 =============== */

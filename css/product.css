@@ -11,7 +11,7 @@
 }
 
 .product_section2 {
-  padding: 100px 160px 100px;
+  padding: 100px 160px;
   background-color: #FBFBF6;
   border-radius: 80px 80px 0px 0px;
   display: flex;
@@ -26,10 +26,13 @@
 }
 
 .product_section3 {
-  padding: 100px 120px;
+  padding: 100px 160px;
   background-color: #F5F4E9;
   border-radius: 80px 80px 0px 0px;
   border-top: 1px solid #DEDCBF;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /* =========== section1 =============== */
@@ -274,7 +277,6 @@
 }
 
 /* =========== section2 =============== */
-/* ========== section2 area ========== */
 
 .product_section2 h1 {
   text-align: left;
@@ -331,3 +333,47 @@
 }
 
 /* =========== section3 =============== */
+
+.product_section3_middle {
+  color: #464646;
+  text-align: left;
+}
+
+.product_section3_middle h1 {
+  margin: 0px 0px 40px;
+}
+
+.product_section3_middle .text {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* =========== section3 =============== */
+/* =========== button =============== */
+
+.product_section3 .btn {
+  background-color: #0C794D;
+  border-radius: 32px;
+  border: none;
+  min-width: max-content;
+  padding: 12px 12px;
+  cursor: pointer;
+  margin: 40px 0px 0px;
+  position: relative;
+  left: -12px;
+}
+
+.product_section3 .btn span {
+  color: white;
+  font-size: 14px;
+}
+
+.product_section3 a {
+  text-decoration: none;
+}
+
+.product_section3 .btn:hover {
+  border: 1px solid #DB5331;
+  background-color: #DB5331;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.33);
+}
