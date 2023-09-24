@@ -24,7 +24,7 @@ function rotateLeft() {
 
 
   // 更換背景色
-  const section1 = document.getElementById('section1');
+  const section1 = document.getElementById('product_section1');
   if (Math.abs(angle) % 120 === 30) {
     section1.style.backgroundColor = "#FFE9DE"; //紅
   } else if (Math.abs(angle) % 120 === 60) {
@@ -98,7 +98,7 @@ function rotateRight() {
 
 
   // 更換背景色
-  const section1 = document.getElementById('section1');
+  const section1 = document.getElementById('product_section1');
   if (angle % 120 === 30) {
     section1.style.backgroundColor = "#FFF9DE"; //黃
   } else if (angle % 120 === 60) {
