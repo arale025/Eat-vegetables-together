@@ -1,48 +1,133 @@
 section {
-  padding: 50px 8vw;
+  padding: 50px 120px;
   background-color: #F5F4E9;
   width: 100%;
-}
-
-h1 {
-  color: #464646;
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-.frame {
   display: flex;
 }
 
 .container {
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  width: 75%;
 }
 
-.card {
-  background: #fffefc;
-  box-shadow: 0 2px 30px rgba(0, 0, 0, 0.1);
-  margin: 0px 1vw 30px;
-  padding: 40px 30px;
-  display: inline-block;
-  vertical-align: middle;
-  border-radius: 32px;
-  position: relative;
-  width: 237px;
-  border: 2px solid #0C794D;
-}
-
-
-/* ========== cart ========== */
 .cart {
   border-radius: 32px;
-  border: 2px solid #0C794D;
-  width: 600px;
+  border: 2px solid #464646;
+  width: 25%;
   height: 644px;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: space-between; */
+  background-color: #FBFBF6;
 }
 
+/* =========== button =============== */
+
+.container .btn {
+  display: flex;
+  background-color: #0C794D;
+  border-radius: 32px;
+  border: none;
+  min-width: max-content;
+  padding: 20px 12px;
+  cursor: pointer;
+  margin: 0px 42px 0px;
+  width: 350px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.container .btn span {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.container a {
+  text-decoration: none;
+}
+
+.container .btn:hover {
+  border: 1px solid #DB5331;
+  background-color: #DB5331;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.33);
+}
+
+.container .btn svg {
+  height: 20px;
+  width: 20px;
+  margin: 0px 10px;
+}
+
+/* ========== card ========== */
+.container .card {
+  background-color: #FBFBF6;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  border-radius: 32px;
+  position: relative;
+  margin: 30px 30px 0px;
+  width: calc((100% - 150px) / 2);
+  border: 2px solid #464646;
+  padding: 15px;
+}
+
+.container .card_frame {
+  display: flex;
+  text-align: left;
+}
+
+.container .card .card_left {
+  padding: 25px 0px 0px 22px;
+}
+
+.container .card .card_right {
+  padding: 40px 22px 0px 24px;
+  color: #464646;
+}
+
+.container .card .card_detail {
+  font-size: 12px;
+}
+
+.container .card_count {
+  display: flex;
+  justify-content: right;
+  align-items: end;
+  padding-right: 22px;
+}
+
+.container .card_count .fa {
+  cursor: pointer;
+  background-color: #FBFBF6;
+  border: none;
+  height: 20px;
+  width: 20px;
+}
+
+.container .card_count .quantity {
+  margin: 0px 5px 0px 11px;
+  font-size: 20px;
+  color: #464646;
+}
+
+.container .card_count .minus2_frame {
+  height: 20px;
+  width: 20px;
+}
+
+.container .card_count .fa-light_minus {
+  background-color: #FBFBF6;
+  border: none;
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  /* z-index: -1; */
+}
+
+.container .card_count .m1 {
+  z-index: -1;
+}
 
 /*  ========== Cart Header ==========*/
 .cart_header {
@@ -51,7 +136,7 @@ h1 {
   align-items: center;
   height: 70px;
   width: 100%;
-  border-bottom: 2px solid #0C794D;
+  border-bottom: 2px solid #464646;
   padding: 10px 30px;
 }
 
@@ -81,7 +166,7 @@ h1 {
   display: flex;
   margin: 8px 16px;
   padding-bottom: 16px;
-  border-bottom: 1px solid #0C794D;
+  border-bottom: 1px solid #464646;
 }
 
 .cart_list .list_left {
@@ -120,7 +205,7 @@ h1 {
 
 .cart_list .list_right .fa {
   cursor: pointer;
-  background-color: #F5F4E9;
+  background-color: #FBFBF6;
   border: none;
   height: 20px;
   width: 20px;
@@ -172,7 +257,7 @@ h1 {
   min-width: max-content;
   padding: 12px 28px;
   cursor: pointer;
-  margin: 10px 0px;
+  margin-bottom: 5px;
 }
 
 .cart_btn_frame .btn span {
