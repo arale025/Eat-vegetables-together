@@ -118,7 +118,6 @@ section {
   border-radius: 32px;
   border: none;
   min-width: max-content;
-  cursor: pointer;
   justify-content: center;
   align-items: center;
   cursor: pointer;
@@ -128,6 +127,11 @@ section {
 
 .go_btn {
   margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.summit_btn {
+  margin-bottom: 100px;
 }
 
 .summit_btn span,
@@ -136,8 +140,7 @@ section {
   font-size: 14px;
 }
 
-.summit_btn_frame a,
-.go_btn a {
+.btn_frame a {
   text-decoration: none;
 }
 

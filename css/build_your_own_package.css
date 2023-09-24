@@ -1,0 +1,217 @@
+section {
+  padding: 50px 160px;
+  background-color: #F5F4E9;
+  width: 100%;
+}
+
+/* ========== back_btn ========== */
+
+.back_btn {
+  display: flex;
+  background-color: #0C794D;
+  border-radius: 32px;
+  border: none;
+  min-width: max-content;
+  padding: 12px 14px 12px 12px;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+
+.back_btn span {
+  color: white;
+  font-size: 14px;
+}
+
+.back_btn_frame a {
+  text-decoration: none;
+}
+
+.back_btn:hover {
+  border: 1px solid #DB5331;
+  background-color: #DB5331;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.33);
+}
+
+.back_btn svg {
+  height: 16px;
+  width: 16px;
+  margin: 0px 4px;
+}
+
+/* ========== title ========== */
+
+.title {
+  color: #464646;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.title span {
+  font-size: 16px;
+  line-height: 32px;
+}
+
+/* ========== nav box ========== */
+
+.radio {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.tab_content {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.35s;
+}
+
+.radio:checked~.tab_content {
+  max-height: 10rem;
+}
+
+.accordion {
+  border: 2px solid #DEDCBF;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.tab {
+  border-bottom: 2px solid #DEDCBF;
+}
+
+.tab:not(:last-child) {
+  border-bottom: 2px solid #DEDCBF;
+}
+
+.tab_label {
+  display: flex;
+  cursor: pointer;
+  justify-content: space-between;
+  padding: 1rem;
+  color: #464646;
+  font-weight: bold;
+}
+
+.tab_close {
+  display: flex;
+  cursor: pointer;
+  color: #464646;
+  justify-content: flex-end;
+  padding: .25rem 1rem;
+  font-size: .75rem;
+}
+
+.tab_label:hover {
+  background-color: #FBFBF6;
+}
+
+.radio:checked+.tab_label {
+  background-color: #fffff9;
+  color: black;
+}
+
+.tab_label::after {
+  content: "\276F";
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  transform: rotate(90deg);
+  transition: all 0.35s;
+  color: #464646;
+}
+
+.radio:checked+.tab_label::after {
+  transform: rotate(270deg);
+  color: black
+}
+
+/* ========== checkbox ========== */
+label {
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]+label::before {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background-image: url('data:image/svg+xml,<svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.33333 17.6667C11.6345 17.6667 13.7178 16.7339 15.2259 15.2259C16.7339 13.7178 17.6667 11.6345 17.6667 9.33333C17.6667 7.03217 16.7339 4.94883 15.2259 3.44077C13.7178 1.93274 11.6345 1 9.33333 1C7.03217 1 4.94883 1.93274 3.44077 3.44077C1.93274 4.94883 1 7.03217 1 9.33333C1 11.6345 1.93274 13.7178 3.44077 15.2259C4.94883 16.7339 7.03217 17.6667 9.33333 17.6667Z" stroke="%23464646" stroke-width="1.66667" stroke-linejoin="round"/></svg>');
+  background-size: contain;
+  margin-right: 5px;
+  position: relative;
+  top: 1px;
+}
+
+input[type="checkbox"]:checked+label::before {
+  background-image: url('data:image/svg+xml,<svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.33333 17.6667C11.6345 17.6667 13.7178 16.7339 15.2259 15.2259C16.7339 13.7178 17.6667 11.6345 17.6667 9.33333C17.6667 7.03217 16.7339 4.94883 15.2259 3.44077C13.7178 1.93274 11.6345 1 9.33333 1C7.03217 1 4.94883 1.93274 3.44077 3.44077C1.93274 4.94883 1 7.03217 1 9.33333C1 11.6345 1.93274 13.7178 3.44077 15.2259C4.94883 16.7339 7.03217 17.6667 9.33333 17.6667Z" fill="%230C794D" stroke="%230C794D" stroke-width="1.66667" stroke-linejoin="round"/><path d="M6 9.33331L8.5 11.8333L13.5 6.83331" fill="%230C794D"/><path d="M6 9.33331L8.5 11.8333L13.5 6.83331" stroke="white" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+}
+
+.tab_content label {
+  color: #464646;
+  font-size: 16px;
+  margin: 10px;
+}
+
+.container {
+  padding: 30px 20px;
+  width: 100%;
+}
+
+.checkboxdiv {
+  display: inline-block;
+  width: 103px;
+  margin-bottom: 16px;
+}
+
+/* ========== Botton========== */
+.bottom_frame {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.btn_frame {
+  text-align: center;
+  color: #464646;
+  margin-top: 50px;
+}
+
+.btn_frame .text {
+  font-size: 16px;
+}
+
+.btn_frame .quantity,
+.btn_frame .price {
+  font-size: 24px;
+  margin: 0px 10px;
+}
+
+.btn_frame .btn {
+  background-color: #0C794D;
+  border-radius: 32px;
+  border: none;
+  min-width: max-content;
+  cursor: pointer;
+  padding: 12px 20px;
+  margin: 20px 0px 100px 0px;
+}
+
+.btn_frame .btn span {
+  color: white;
+  font-size: 14px;
+}
+
+.btn_frame a {
+  text-decoration: none;
+}
+
+.btn_frame .btn:hover {
+  border: 1px solid #DB5331;
+  background-color: #DB5331;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.33);
+}
