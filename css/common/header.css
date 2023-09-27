@@ -201,12 +201,11 @@
 }
 
 .nav .btn:hover {
-  border: 1px solid #DB5331;
   background-color: #DB5331;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.33);
 }
 
-.nav .btn svg {
+.nav .btn img {
   vertical-align: text-bottom;
   height: 16px;
   width: 16px;
