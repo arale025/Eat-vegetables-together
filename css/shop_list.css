@@ -48,12 +48,11 @@ section {
 }
 
 .container .btn:hover {
-  border: 1px solid #DB5331;
   background-color: #DB5331;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.33);
 }
 
-.container .btn svg {
+.container .btn img {
   height: 20px;
   width: 20px;
   margin: 0px 10px;
@@ -266,7 +265,6 @@ section {
 }
 
 .cart_btn_frame .btn:hover {
-  border: 1px solid #DB5331;
   background-color: #DB5331;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.33);
 }

@@ -258,7 +258,7 @@
   width: 280px;
   border-radius: 32px;
   background-color: #FBFBF6;
-  border: 1px solid #949494;
+  border: 2px solid #949494;
 }
 
 .about_us_section5_inputs input {
@@ -270,7 +270,7 @@
 }
 
 .about_us_section5_inputs .input:focus {
-  border: 3px solid #0C794D;
+  border: 2px solid #0C794D;
   background-color: #ffffff;
 }
 
@@ -353,12 +353,11 @@
 }
 
 .about_us_section5_right .btn:hover {
-  border: 1px solid #DB5331;
   background-color: #DB5331;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.33);
 }
 
-.about_us_section5_right .btn svg {
+.about_us_section5_right .btn img {
   vertical-align: text-bottom;
   height: 16px;
   width: 16px;
