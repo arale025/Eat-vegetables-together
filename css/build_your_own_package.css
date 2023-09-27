@@ -28,12 +28,11 @@ section {
 }
 
 .back_btn:hover {
-  border: 1px solid #DB5331;
   background-color: #DB5331;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.33);
 }
 
-.back_btn svg {
+.back_btn img {
   height: 16px;
   width: 16px;
   margin: 0px 4px;
@@ -157,7 +156,7 @@ input[type="checkbox"]:checked+label::before {
   margin: 10px;
 }
 
-.container {
+form {
   padding: 30px 20px;
   width: 100%;
 }
@@ -210,8 +209,14 @@ input[type="checkbox"]:checked+label::before {
   text-decoration: none;
 }
 
+.btn_frame .btn img {
+  vertical-align: text-bottom;
+  height: 16px;
+  width: 16px;
+  margin: 0px 4px;
+}
+
 .btn_frame .btn:hover {
-  border: 1px solid #DB5331;
   background-color: #DB5331;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.33);
 }
