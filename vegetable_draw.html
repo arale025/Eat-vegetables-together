@@ -7,6 +7,7 @@
   <title>菜菜選擇器! 吃菜不需要思考</title>
   <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
   <link rel="bookmark" href="./images/favicon.ico" type="image/x-icon">
+  <script src="./js/vegetable_draw.js"></script>
   <link href="./css/vegetable_draw.css" rel="stylesheet">
   <link href="./css/common/all.css" rel="stylesheet">
   <link href="./css/common/header.css" rel="stylesheet">
@@ -58,78 +59,54 @@
     </div>
     <div class="container">
       <div class="contain">
-        <p>綠花椰菜</p>
-        <div class="lock2_frame">
-          <button class="fa fa-lock l1">
-            <img src="./images/icon_lock.svg" alt="鎖定圖示">
-          </button>
-          <button class="fa fa-unlock">
-            <img src="./images/icon_unlock.svg" alt="未鎖定圖示">
-          </button>
+        <p id="array0">綠花椰菜</p>
+        <div>
+          <input class="checkbox" type="checkbox" id="lock1">
+          <label for="lock1"></label>
         </div>
       </div>
       <div class="contain">
-        <p>玉米筍</p>
-        <div class="lock2_frame">
-          <button class="fa fa-lock">
-            <img src="./images/icon_lock.svg" alt="鎖定圖示">
-          </button>
-          <button class="fa fa-unlock">
-            <img src="./images/icon_unlock.svg" alt="未鎖定圖示">
-          </button>
+        <p id="array1">玉米筍</p>
+        <div>
+          <input class="checkbox" type="checkbox" id="lock2">
+          <label for="lock2"></label>
         </div>
       </div>
       <div class="contain">
-        <p>茄子</p>
-        <div class="lock2_frame">
-          <button class="fa fa-lock">
-            <img src="./images/icon_lock.svg" alt="鎖定圖示">
-          </button>
-          <button class="fa fa-unlock">
-            <img src="./images/icon_unlock.svg" alt="未鎖定圖示">
-          </button>
+        <p id="array2">茄子</p>
+        <div>
+          <input class="checkbox" type="checkbox" id="lock3">
+          <label for="lock3"></label>
         </div>
       </div>
       <div class="contain">
-        <p>毛豆</p>
-        <div class="lock2_frame">
-          <button class="fa fa-lock">
-            <img src="./images/icon_lock.svg" alt="鎖定圖示">
-          </button>
-          <button class="fa fa-unlock">
-            <img src="./images/icon_unlock.svg" alt="未鎖定圖示">
-          </button>
+        <p id="array3">毛豆</p>
+        <div>
+          <input class="checkbox" type="checkbox" id="lock4">
+          <label for="lock4"></label>
         </div>
       </div>
       <div class="contain">
-        <p>青江菜</p>
-        <div class="lock2_frame">
-          <button class="fa fa-lock">
-            <img src="./images/icon_lock.svg" alt="鎖定圖示">
-          </button>
-          <button class="fa fa-unlock">
-            <img src="./images/icon_unlock.svg" alt="未鎖定圖示">
-          </button>
+        <p id="array4">青江菜</p>
+        <div>
+          <input class="checkbox" type="checkbox" id="lock5">
+          <label for="lock5"></label>
         </div>
       </div>
       <div class="contain">
-        <p>杏鮑菇</p>
-        <div class="lock2_frame">
-          <button class="fa fa-lock">
-            <img src="./images/icon_lock.svg" alt="鎖定圖示">
-          </button>
-          <button class="fa fa-unlock">
-            <img src="./images/icon_unlock.svg" alt="未鎖定圖示">
-          </button>
+        <p id="array5">杏鮑菇</p>
+        <div>
+          <input class="checkbox" type="checkbox" id="lock6" onclick="check(lock6)">
+          <label for="lock6"></label>
         </div>
       </div>
     </div>
     <div class="bottom_frame">
       <img src="./images/product_section3_and_vegetabledraw_nest.svg" alt="菜菜寶寶的家插畫">
       <div class="btn_frame">
-        <a href="./vegetable_draww.html"><button class="go_btn">
-            <span> GO !</span>
-          </button></a>
+        <button class="go_btn" onclick="drawAndShow()">
+          <span> GO !</span>
+        </button>
         <a href="./shop_list.html"><button class="summit_btn"><span>加入購物車</span><img src="./images/icon_cart.svg"
               alt="購物車圖示">
           </button></a>
