@@ -6,7 +6,7 @@
 
 .homepage_section2_outline {
   width: 100%;
-  background-color: #fffefc
+  background-color: #fffefc;
 }
 
 .homepage_section2 {
@@ -231,7 +231,6 @@
   height: 40vw;
   max-width: 456px;
   max-height: 300px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
   border-radius: 32px;
   transform-origin: center;
   background-color: white;
@@ -257,19 +256,18 @@
 }
 
 .homepage_section2 .cards_item:nth-child(1) {
-  outline: 10px solid #B9D27E;
-  outline-offset: -1px;
+  box-shadow: 0 0 0 .57em #B9D27E;
   transform: rotateY(0) translateZ(35vw);
 }
 
 .homepage_section2 .cards_item:nth-child(2) {
-  outline: 10px solid #C7C4DC;
+  box-shadow: 0 0 0 .57em #C7C4DC;
   outline-offset: -1px;
   transform: rotateY(120deg) translateZ(35vw);
 }
 
 .homepage_section2 .cards_item:nth-child(3) {
-  outline: 10px solid #F6DD6F;
+  box-shadow: 0 0 0 .57em #F6DD6F;
   outline-offset: -1px;
   transform: rotateY(240deg) translateZ(35vw);
 }

@@ -1,8 +1,6 @@
 .about_us_section1 {
   height: calc(100vh - 70px);
   width: 100%;
-  display: grid;
-  place-items: center;
   background-color: #fffefc;
 }
 
@@ -62,6 +60,7 @@
 .about_us_section1 .slogan {
   position: absolute;
   top: 45%;
+  right: 38%;
 }
 
 .about_us_section1 .pack {
@@ -231,10 +230,10 @@
 
 
 .about_us_section5_right {
-  border: 5px solid #0C794D;
+  border: 4px solid #0C794D;
   border-style: dotted;
   border-radius: 32px;
-  padding: 20px;
+  padding: 30px;
 }
 
 .about_us_section5_inputs_left {

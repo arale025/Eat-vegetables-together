@@ -81,11 +81,11 @@ section {
 }
 
 .container .card .card_right {
-  padding: 40px 22px 0px 24px;
+  padding: 25px 22px 0px 24px;
   color: #464646;
 }
 
-.container .card .card_detail {
+.container .card .product_detail {
   font-size: 12px;
 }
 
@@ -133,10 +133,9 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 70px;
   width: 100%;
   border-bottom: 2px solid #464646;
-  padding: 10px 30px;
+  padding: 20px 30px;
 }
 
 .cart_header .number {
@@ -158,14 +157,16 @@ section {
 
 /* ========== Cart list ========== */
 .cart_list {
-  height: 500px;
+  height: 480px;
+  padding: 8px 16px 0px 16px;
+  overflow: auto;
 }
 
 .cart_list .list {
   display: flex;
-  margin: 8px 16px;
-  padding-bottom: 16px;
-  border-bottom: 1px solid #464646;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #DEDCBF;
 }
 
 .cart_list .list_left {
@@ -221,20 +222,6 @@ section {
   margin-left: 5px;
 }
 
-.cart_list .list_right .delete_and_minus_frame {
-  height: 20px;
-  width: 20px;
-}
-
-.cart_list .list_right .fa-delete {
-  position: absolute;
-  /* z-index: -1; */
-}
-
-.cart_list .list_right .d1 {
-  z-index: -1;
-}
-
 .cart_list .list_right .quantity {
   margin: 0px 5px 0px 11px;
   font-size: 20px;
@@ -247,6 +234,8 @@ section {
 .cart_btn_frame {
   text-align: center;
   width: 100%;
+  padding: 20px 0px;
+  /* border: 1px solid#0C794D; */
 }
 
 .cart_btn_frame .btn {
@@ -256,7 +245,6 @@ section {
   min-width: max-content;
   padding: 12px 28px;
   cursor: pointer;
-  margin-bottom: 5px;
 }
 
 .cart_btn_frame .btn span {
