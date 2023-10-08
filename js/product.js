@@ -6,17 +6,6 @@ function rotateLeft() {
   const values = transformValue.split('(')[1].split(')')[0].split(',')
   var angle = Math.round(Math.atan2(values[1], values[0]) * (180 / Math.PI));
   angle -= 30;
-  if (angle === 150) {
-    angle = -210
-  } else if (angle === 120) {
-    angle = -240
-  } else if (angle === 90) {
-    angle = -270
-  } else if (angle === 60) {
-    angle = -300
-  } else if (angle === 30) {
-    angle = -330
-  }
 
 
   // 旋轉轉盤
@@ -82,15 +71,6 @@ function rotateRight() {
   const values = transformValue.split('(')[1].split(')')[0].split(',')
   var angle = Math.round(Math.atan2(values[1], values[0]) * (180 / Math.PI));
   angle += 30;
-  if (angle === -120) {
-    angle = 240
-  } else if (angle === -90) {
-    angle = 270
-  } else if (angle === -60) {
-    angle = 300
-  } else if (angle === -30) {
-    angle = 330
-  }
 
 
   // 旋轉轉盤
