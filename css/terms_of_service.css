@@ -1,7 +1,12 @@
-.tos {
+section {
   width: 100%;
-  margin: auto;
   background-color: #F5F4E9;
+  display: flex;
+  justify-content: center;
+}
+
+.tos {
+  width: 1200px;
   padding: 50px 250px;
   color: #464646;
 }
@@ -39,4 +44,29 @@
   font-size: 14px;
   line-height: 25px;
   list-style: decimal;
+}
+
+/* ========== RWD ========== */
+
+@media screen and (max-width: 1200px) {
+
+  .tos {
+    width: 80vw;
+    padding: 50px 0px;
+  }
+
+}
+
+@media screen and (max-width: 414px) {
+
+  section {
+    min-width: 320px;
+  }
+
+  .tos {
+    width: 85vw;
+    min-width: 280px;
+    padding: 50px 0px;
+  }
+
 }
