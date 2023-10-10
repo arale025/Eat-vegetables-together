@@ -40,12 +40,12 @@ section {
 
 /* ========== title ========== */
 
-.title {
+.draw_title {
   color: #464646;
   text-align: center;
 }
 
-.title span {
+.draw_title span {
   font-size: 16px;
   line-height: 32px;
 }

@@ -7,6 +7,8 @@
   <title>菜菜子｜菜菜子蔬菜包</title>
   <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
   <link rel="bookmark" href="./images/favicon.ico" type="image/x-icon">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+  <script src="./js/all.js"></script>
   <script src="./js/product.js"></script>
   <link href="./css/product.css" rel="stylesheet">
   <link href="./css/common/all.css" rel="stylesheet">
@@ -15,8 +17,31 @@
 </head>
 
 <body>
-  <header class="header">
-    <div class="nav">
+  <div class="nav_box">
+    <div class="line close">
+      <div class="menu"></div>
+    </div>
+    <div class="menu_list">
+      <ul>
+        <li class="title"><a href="./index.html">Home</a></li>
+        <li class="title"><a href="./product.html" class="after">菜菜子蔬菜包</a></li>
+        <li class="subtitle"><a href="product.html#product_section1">營養師推薦組合</a></li>
+        <li class="subtitle"><a href="product.html#product_section2">40種蔬菜自己配</a></li>
+        <li class="subtitle"><a href="product.html#product_section3">菜菜選擇器</a></li>
+        <li class="title"><a href="./about_us.html" class="after">關於我們</a></li>
+        <li class="subtitle"><a href="about_us.html#aboutus_section1">品牌故事</a>
+        </li>
+        <li class="subtitle"><a href="about_us.html#aboutus_section3">嚴選食材</a>
+        </li>
+        <li class="subtitle"><a href="about_us.html#aboutus_section5">聯絡我們</a>
+        </li>
+        <li class="title"><a href="./shop_list.html">立即訂購</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <header class="nav">
+    <div class="nav_frame">
       <div class="logo">
         <a href="./index.html"><img src="./images/logo_horizontal.png" alt="菜菜子商標"></a>
       </div>
@@ -25,9 +50,9 @@
         <div class="product_block">
           <a href="./product.html" class="product_text -on">菜菜子蔬菜包</a>
           <ul class="product_list">
-            <li><a href="#product_section1"><span data-content="營養師推薦組合"></span>營養師推薦組合</a></li>
-            <li><a href="#product_section2"><span data-content="40種蔬菜自己配"></span>40種蔬菜自己配</a></li>
-            <li><a href="#product_section3"><span data-content="菜菜選擇器"></span>菜菜選擇器</a></li>
+            <li><a href="product.html#product_section1"><span data-content="營養師推薦組合"></span>營養師推薦組合</a></li>
+            <li><a href="product.html#product_section2"><span data-content="40種蔬菜自己配"></span>40種蔬菜自己配</a></li>
+            <li><a href="product.html#product_section3"><span data-content="菜菜選擇器"></span>菜菜選擇器</a></li>
           </ul>
         </div>
         <div class="aboutus_block">
@@ -40,150 +65,163 @@
         </div>
         <a href="./shop_list.html"><button class="btn"><span>立即訂購</span><img src="./images/icon_cart.svg" alt="購物車圖示">
           </button></a>
+        <div class="line burger">
+          <div class="menu"></div>
+        </div>
       </div>
     </div>
   </header>
 
-  <section class="product_section1" id="product_section1">
-    <div class="product_section1_left">
-      <span class="product_section1_title">營養師推薦組合</span>
-      <div class="content_container">
-        <div class="content red" id="redContent">
-          <h1>番茄寶寶蔬菜包</h1>
-          <span>高麗菜、菠菜、韭菜、番茄、胡蘿蔔、櫛瓜、<br>綠花椰菜、甜菜根、杏鮑菇、竹筍</span>
-          <div class="count">
-            <div class="quantity">
-              <h4>購買數量</h4>
-              <div class="quantity_button_frame">
-                <button class="fa fa-clear" id="clearRed" onclick="clearRed()">
-                  <img src="./images/icon_clear.svg" alt="清除按鈕">
-                </button>
-                <button class="fa fa-minus" onclick="minusRed()">
-                  <img src="./images/icon_minus.svg" alt="減號按鈕">
-                </button>
-                <span class="number" id="numberRed">1</span>
-                <button class="fa fa-plus" onclick="plusRed()">
-                  <img src="./images/icon_plus.svg" alt="加號按鈕">
-                </button>
+  <section class="product_section1_outline">
+    <div class="product_section1" id="product_section1">
+      <div class="product_section1_left">
+        <span class="product_section1_title">營養師推薦組合</span>
+        <div class="content_container">
+          <div class="content red" id="redContent">
+            <div class="text">
+              <h1>番茄寶寶蔬菜包</h1>
+              <span>高麗菜、菠菜、韭菜、番茄、胡蘿蔔、櫛瓜、<br>綠花椰菜、甜菜根、杏鮑菇、竹筍</span>
+            </div>
+            <div class="count">
+              <div class="quantity">
+                <h4>購買數量</h4>
+                <div class="quantity_button_frame">
+                  <button class="fa fa-clear" id="clearRed" onclick="clearRed()">
+                    <img src="./images/icon_clear.svg" alt="清除按鈕">
+                  </button>
+                  <button class="fa fa-minus" onclick="minusRed()">
+                    <img src="./images/icon_minus.svg" alt="減號按鈕">
+                  </button>
+                  <span class="number" id="numberRed">1</span>
+                  <button class="fa fa-plus" onclick="plusRed()">
+                    <img src="./images/icon_plus.svg" alt="加號按鈕">
+                  </button>
+                </div>
+              </div>
+              <div class="price">
+                <h4>總金額</h4>
+                <span class="amount" id="amountRed">70</span><span>元</span>
               </div>
             </div>
-            <div class="price">
-              <h4>總金額</h4>
-              <span class="amount" id="amountRed">70</span><span>元</span>
+          </div>
+          <div class="content purple" id="purpleContent">
+            <div class="text">
+              <h1>茄子寶寶蔬菜包</h1>
+              <span>猴頭菇、茄子、冬瓜、秋葵、蘆筍、牛蒡、<br>青椒、苦瓜、洋蔥、龍鬚菜</span>
+            </div>
+            <div class="count">
+              <div class="quantity">
+                <h4>購買數量</h4>
+                <div class="quantity_button_frame">
+                  <button class="fa fa-clear" id="clearPurple" onclick="clearPurple()">
+                    <img src="./images/icon_clear.svg" alt="清除按鈕">
+                  </button>
+                  <button class="fa fa-minus" onclick="minusPurple()">
+                    <img src="./images/icon_minus.svg" alt="減號按鈕">
+                  </button>
+                  <span class="number" id="numberPurple">1</span>
+                  <button class="fa fa-plus" onclick="plusPurple()">
+                    <img src="./images/icon_plus.svg" alt="加號按鈕">
+                  </button>
+                </div>
+              </div>
+              <div class="price">
+                <h4>總金額</h4>
+                <span class="amount" id="amountPurple">90</span><span>元</span>
+              </div>
+            </div>
+          </div>
+          <div class="content yellow" id="yellowContent">
+            <div class="text">
+              <h1>玉米寶寶蔬菜包</h1>
+              <span>小白菜、萵苣、玉米、毛豆、金針菇、南瓜、<br>地瓜、白花椰菜、娃娃菜、水蓮</span>
+            </div>
+            <div class="count">
+              <div class="quantity">
+                <h4>購買數量</h4>
+                <div class="quantity_button_frame">
+                  <button class="fa fa-clear" id="clearYellow" onclick="clearYellow()">
+                    <img src="./images/icon_clear.svg" alt="清除按鈕">
+                  </button>
+                  <button class="fa fa-minus" onclick="minusYellow()">
+                    <img src="./images/icon_minus.svg" alt="減號按鈕">
+                  </button>
+                  <span class="number" id="numberYellow">1</span>
+                  <button class="fa fa-plus" onclick="plusYellow()">
+                    <img src="./images/icon_plus.svg" alt="加號按鈕">
+                  </button>
+                </div>
+              </div>
+              <div class="price">
+                <h4>總金額</h4>
+                <span class="amount" id="amountYellow">65</span><span>元</span>
+              </div>
+            </div>
+          </div>
+          <div class="content Green" id="greenContent">
+            <div class="text">
+              <h1>菜菜寶寶蔬菜包</h1>
+              <span>香菇、黑木耳、海帶、青江菜、蚵仔白菜、<br>玉米筍、小黃瓜、絲瓜、馬鈴薯、白蘿蔔</span>
+            </div>
+            <div class="count">
+              <div class="quantity">
+                <h4>購買數量</h4>
+                <div class="quantity_button_frame">
+                  <button class="fa fa-clear" id=clearGreen onclick="clearGreen()">
+                    <img src="./images/icon_clear.svg" alt="清除按鈕">
+                  </button>
+                  <button class="fa fa-minus" onclick="minusGreen()">
+                    <img src="./images/icon_minus.svg" alt="減號按鈕">
+                  </button>
+                  <span class="number" id="numberGreen">1</span>
+                  <button class="fa fa-plus" onclick="plusGreen()">
+                    <img src="./images/icon_plus.svg" alt="加號按鈕">
+                  </button>
+                </div>
+              </div>
+              <div class="price">
+                <h4>總金額</h4>
+                <span class="amount" id="amountGreen">50</span><span>元</span>
+              </div>
+              <div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="content purple" id="purpleContent">
-          <h1>茄子寶寶蔬菜包</h1>
-          <span>猴頭菇、茄子、冬瓜、秋葵、蘆筍、牛蒡、<br>青椒、苦瓜、洋蔥、龍鬚菜</span>
-          <div class="count">
-            <div class="quantity">
-              <h4>購買數量</h4>
-              <div class="quantity_button_frame">
-                <button class="fa fa-clear" id="clearPurple" onclick="clearPurple()">
-                  <img src="./images/icon_clear.svg" alt="清除按鈕">
-                </button>
-                <button class="fa fa-minus" onclick="minusPurple()">
-                  <img src="./images/icon_minus.svg" alt="減號按鈕">
-                </button>
-                <span class="number" id="numberPurple">1</span>
-                <button class="fa fa-plus" onclick="plusPurple()">
-                  <img src="./images/icon_plus.svg" alt="加號按鈕">
-                </button>
-              </div>
-            </div>
-            <div class="price">
-              <h4>總金額</h4>
-              <span class="amount" id="amountPurple">90</span><span>元</span>
-            </div>
-          </div>
-        </div>
-        <div class="content yellow" id="yellowContent">
-          <h1>玉米寶寶蔬菜包</h1>
-          <span>小白菜、萵苣、玉米、毛豆、金針菇、南瓜、<br>地瓜、白花椰菜、娃娃菜、水蓮</span>
-          <div class="count">
-            <div class="quantity">
-              <h4>購買數量</h4>
-              <div class="quantity_button_frame">
-                <button class="fa fa-clear" id="clearYellow" onclick="clearYellow()">
-                  <img src="./images/icon_clear.svg" alt="清除按鈕">
-                </button>
-                <button class="fa fa-minus" onclick="minusYellow()">
-                  <img src="./images/icon_minus.svg" alt="減號按鈕">
-                </button>
-                <span class="number" id="numberYellow">1</span>
-                <button class="fa fa-plus" onclick="plusYellow()">
-                  <img src="./images/icon_plus.svg" alt="加號按鈕">
-                </button>
-              </div>
-            </div>
-            <div class="price">
-              <h4>總金額</h4>
-              <span class="amount" id="amountYellow">65</span><span>元</span>
-            </div>
-          </div>
-        </div>
-        <div class="content Green" id="greenContent">
-          <h1>菜菜寶寶蔬菜包</h1>
-          <span>香菇、黑木耳、海帶、青江菜、蚵仔白菜、<br>玉米筍、小黃瓜、絲瓜、馬鈴薯、白蘿蔔</span>
-          <div class="count">
-            <div class="quantity">
-              <h4>購買數量</h4>
-              <div class="quantity_button_frame">
-                <button class="fa fa-clear" id=clearGreen onclick="clearGreen()">
-                  <img src="./images/icon_clear.svg" alt="清除按鈕">
-                </button>
-                <button class="fa fa-minus" onclick="minusGreen()">
-                  <img src="./images/icon_minus.svg" alt="減號按鈕">
-                </button>
-                <span class="number" id="numberGreen">1</span>
-                <button class="fa fa-plus" onclick="plusGreen()">
-                  <img src="./images/icon_plus.svg" alt="加號按鈕">
-                </button>
-              </div>
-            </div>
-            <div class="price">
-              <h4>總金額</h4>
-              <span class="amount" id="amountGreen">50</span><span>元</span>
-            </div>
-            <div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <button class="btn"><span>加入購物車</span>
-        <img src="./images/icon_cart.svg" alt="購物車圖示">
-      </button>
-    </div>
-    <div class="product_section1_right">
-      <object id="turntable" type="image/svg+xml" data="./images/product_section1_turntable.svg"></object>
-    </div>
-    <div class="background">
-      <div class="right_up">
-        <div class="curved-corner-bottomleft"></div>
-        <div class="curved-corner-bottomright"></div>
-      </div>
-      <div class="right_down">
-        <button class="go_left" id="rotateLeft" onclick="rotateLeft()">
-          <img src="./images/icon_arrow_left.svg" alt="向左轉按鈕">
+        <button class="btn"><span>加入購物車</span>
+          <img src="./images/icon_cart.svg" alt="購物車圖示">
         </button>
-        <div class="pack_container">
-          <div class="pack red" id="redSvg">
-            <object type="image/svg+xml" data="./images/product_section1_redpack.svg"></object>
-          </div>
-          <div class="pack purple" id="purpleSvg">
-            <object type="image/svg+xml" data="./images/product_section1_purplepack.svg"></object>
-          </div>
-          <div class="pack yellow" id="yellowSvg">
-            <object type="image/svg+xml" data="./images/product_section1_yellowpack.svg"></object>
-          </div>
-          <div class="pack green" id="greenSvg">
-            <object type="image/svg+xml" data="./images/product_section1_greenpack.svg"></object>
-          </div>
+      </div>
+      <div class="product_section1_right">
+        <object id="turntable" type="image/svg+xml" data="./images/product_section1_turntable.svg"></object>
+      </div>
+      <div class="background">
+        <div class="right_up">
+          <div class="curved-corner-bottomleft"></div>
+          <div class="curved-corner-bottomright"></div>
         </div>
-        <button class="go_right" id="rotateRight" onclick="rotateRight()">
-          <img src="./images/icon_arrow_right.svg" alt="向右轉按鈕">
-        </button>
+        <div class="right_down">
+          <button class="go_left" id="rotateLeft" onclick="rotateLeft()">
+            <img src="./images/icon_arrow_left.svg" alt="向左轉按鈕">
+          </button>
+          <div class="pack_container">
+            <div class="pack red" id="redSvg">
+              <object type="image/svg+xml" data="./images/product_section1_redpack.svg"></object>
+            </div>
+            <div class="pack purple" id="purpleSvg">
+              <object type="image/svg+xml" data="./images/product_section1_purplepack.svg"></object>
+            </div>
+            <div class="pack yellow" id="yellowSvg">
+              <object type="image/svg+xml" data="./images/product_section1_yellowpack.svg"></object>
+            </div>
+            <div class="pack green" id="greenSvg">
+              <object type="image/svg+xml" data="./images/product_section1_greenpack.svg"></object>
+            </div>
+          </div>
+          <button class="go_right" id="rotateRight" onclick="rotateRight()">
+            <img src="./images/icon_arrow_right.svg" alt="向右轉按鈕">
+          </button>
+        </div>
       </div>
     </div>
   </section>
@@ -215,34 +253,38 @@
     </div>
   </section>
 
-  <footer class="footer">
+  <footer class="footer_outline">
     <div class="footer_frame">
-      <div class="footer_left">
-        <div class="logo">
-          <a href="./index.html"><img src="./images/logo.png" alt="菜菜子商標"></a>
+      <div class="footer">
+        <div class="footer_left">
+          <div class="logo">
+            <a href="./index.html"><img src="./images/logo.png" alt="菜菜子商標"></a>
+          </div>
+          <div class="footer_navlist">
+            <ul class="footer_nav hide">
+              <li class="title"><a href="./product.html">菜菜子蔬菜包</a></li>
+              <li class="list"><a href="product.html#product_section1"><span data-content="營養師推薦組合"></span>營養師推薦組合</a>
+              </li>
+              <li class="list"><a href="product.html#product_section2"><span data-content="40種蔬菜自己配"></span>40種蔬菜自己配</a>
+              </li>
+              <li class="list"><a href="product.html#product_section3"><span data-content="菜菜選擇器"></span>菜菜選擇器</a></li>
+            </ul>
+            <ul class="footer_nav hide">
+              <li class="title"><a href="./about_us.html">關於我們</a></li>
+              <li class="list"><a href="about_us.html#aboutus_section1"><span data-content="品牌故事"></span>品牌故事</a></li>
+              <li class="list"><a href="about_us.html#aboutus_section3"><span data-content="嚴選食材"></span>嚴選食材</a></li>
+              <li class="list"><a href="about_us.html#aboutus_section5"><span data-content="聯絡我們"></span>聯絡我們</a></li>
+            </ul>
+            <ul class="footer_nav hide">
+              <li class="title"><a href="./shop_list.html">立即訂購</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="footer_navlist">
+        <div class="footer_right">
           <ul class="footer_nav">
-            <li class="title"><a href="./product.html">菜菜子蔬菜包</a></li>
-            <li class="list"><a href="#product_section1"><span data-content="營養師推薦組合"></span>營養師推薦組合</a></li>
-            <li class="list"><a href="#product_section2"><span data-content="40種蔬菜自己配"></span>40種蔬菜自己配</a></li>
-            <li class="list"><a href="#product_section3"><span data-content="菜菜選擇器"></span>菜菜選擇器</a></li>
-          </ul>
-          <ul class="footer_nav">
-            <li class="title"><a href="./about_us.html">關於我們</a></li>
-            <li class="list"><a href="about_us.html#aboutus_section1"><span data-content="品牌故事"></span>品牌故事</a></li>
-            <li class="list"><a href="about_us.html#aboutus_section3"><span data-content="嚴選食材"></span>嚴選食材</a></li>
-            <li class="list"><a href="about_us.html#aboutus_section5"><span data-content="聯絡我們"></span>聯絡我們</a></li>
-          </ul>
-          <ul class="footer_nav">
-            <li class="title"><a href="./shop_list.html">立即訂購</a></li>
-          </ul>
+            <li class="list"><a href="./terms_of_service.html"><span data-content="服務條款"></span>服務條款</a></li>
+            <li class="list"><a href="./privacy_policy.html"><span data-content="隱私權政策"></span>隱私權政策</a></li>
         </div>
-      </div>
-      <div class="footer_right">
-        <ul class="footer_nav">
-          <li class="list"><a href="./terms_of_service.html"><span data-content="服務條款"></span>服務條款</a></li>
-          <li class="list"><a href="./privacy_policy.html"><span data-content="隱私權政策"></span>隱私權政策</a></li>
       </div>
     </div>
     <span class="footer_text">本網站為緯育TibaMe【第87期】前端工程師專業技術養成班學員作品,僅供學習、展示之用途。參考資源 : Poke GO、GREENSPOON、Coolors</span>
