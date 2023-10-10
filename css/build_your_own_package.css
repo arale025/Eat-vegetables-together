@@ -40,13 +40,13 @@ section {
 
 /* ========== title ========== */
 
-.title {
+.byop_title {
   color: #464646;
   text-align: center;
   margin-bottom: 40px;
 }
 
-.title span {
+.byop_title span {
   font-size: 16px;
   line-height: 32px;
 }
