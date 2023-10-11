@@ -414,8 +414,17 @@
 }
 
 @media screen and (max-width: 414px) {
+
+  .about_us_section1 .chopsticks {
+    width: 70vw;
+  }
+
   .about_us_section1 .pack {
     bottom: 30%;
+  }
+
+  .about_us_section1 {
+    height: 600px;
   }
 }
 
@@ -496,16 +505,24 @@
     margin-top: 40px;
   }
 
+  .hidebr {
+    display: none;
+  }
+
 }
 
-@media screen and (max-width: 413px) {
+@media screen and (max-width: 576px) {
 
   .about_us_section3_outline {
     min-width: 320px;
   }
 
+  .hidebr {
+    display: unset;
+  }
+
   .about_us_section3 {
-    width: 412px;
+    width: 414px;
     min-width: 320px;
     padding: 40px 0px 40px 40px;
   }
@@ -516,6 +533,11 @@
 
   .about_us_section3 p {
     font-size: 14px;
+  }
+
+  .about_us_section3 p {
+    position: unset;
+    left: 0px;
   }
 }
 

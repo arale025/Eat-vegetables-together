@@ -669,13 +669,17 @@
   }
 
   .product_section1 {
-    width: 320px;
+    width: 414px;
     min-width: 320px;
   }
 
   .product_section1 .product_section1_left {
     top: -50px;
     left: 1vw;
+  }
+
+  .pack_container object {
+    width: 70%;
   }
 
 }
