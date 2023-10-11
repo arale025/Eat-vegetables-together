@@ -604,18 +604,18 @@
   }
 
   .pack_container object {
-    width: 90%;
+    width: 80%;
   }
 
   .product_section1 .right_down .pack_container {
-    width: 217px;
-    height: 317px;
+    width: 138.88px;
+    height: 202.88px;
   }
 
   .product_section1 .right_down {
     width: 576px;
     height: 662px;
-    padding: 0px 100px 500px;
+    padding: 0px 100px 530px;
 
   }
 
@@ -678,19 +678,18 @@
     left: 10vw;
   }
 
-  .pack_container object {
-    width: 80%;
-  }
-
   .product_section1 .right_down .pack_container {
     width: 138.88px;
     height: 202.88px;
     margin-right: 25vw;
   }
 
+  .pack_container object {
+    width: 80%;
+  }
+
   .product_section1 .right_down {
     padding: 0px 10vw 530px 0vw;
-    /* width: 414px;s */
     justify-content: right;
   }
 
@@ -820,5 +819,17 @@
 
   .product_section3 .text {
     font-size: 14px;
+  }
+}
+
+/* ========== 調整手機邊界圓角 ========== */
+@media screen and (max-width: 425px) {
+
+  .product_section2_frame {
+    border-radius: 32px 32px 0px 0px;
+  }
+
+  .product_section3_frame {
+    border-radius: 32px 32px 0px 0px;
   }
 }

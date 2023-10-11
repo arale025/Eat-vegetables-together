@@ -1149,3 +1149,15 @@
   }
 
 }
+
+/* ========== 調整手機邊界圓角 ========== */
+@media screen and (max-width: 425px) {
+
+  .homepage_section2_frame {
+    border-radius: 32px 32px 0px 0px;
+  }
+
+  .homepage_section4_frame {
+    border-radius: 32px 32px 0px 0px;
+  }
+}
