@@ -391,15 +391,23 @@
 /* ========== S1 RWD ========== */
 @media screen and (max-width: 768px) {
 
+  .about_us_section1 .chopsticks {
+    width: 40vw;
+  }
+
   .about_us_section1 .slogan {
     right: 28%;
+  }
+
+  .about_us_section1 .pack {
+    width: 40vw;
   }
 }
 
 @media screen and (max-width: 576px) {
 
   .about_us_section1 .chopsticks {
-    width: 80vw;
+    width: 50vw;
   }
 
   .about_us_section1 .slogan {
@@ -407,7 +415,7 @@
   }
 
   .about_us_section1 .pack {
-    width: 80vw;
+    width: 50vw;
     bottom: 10%;
   }
 }

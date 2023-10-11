@@ -15,6 +15,21 @@ $(document).ready(function () {
     $('footer').removeClass('blur');
   });
 
+  // 按連結關閉選單
+  $('.title').click(function (event) {
+    $('body').removeClass('open');
+    $('header').removeClass('blur');
+    $('section').removeClass('blur');
+    $('footer').removeClass('blur');
+  });
+
+  $('.subtitle').click(function (event) {
+    $('body').removeClass('open');
+    $('header').removeClass('blur');
+    $('section').removeClass('blur');
+    $('footer').removeClass('blur');
+  });
+
   // 按旁邊畫面關掉選單
 
   $('section').click(function (event) {

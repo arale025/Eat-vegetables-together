@@ -1,7 +1,9 @@
 section {
   background-color: #F5F4E9;
   width: 100%;
-  min-width: 1440px;
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .byop {

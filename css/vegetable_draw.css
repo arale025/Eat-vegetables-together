@@ -1,13 +1,13 @@
 section {
   background-color: #F5F4E9;
   width: 100%;
-  /* min-width: 1440px; */
+  display: flex;
+  justify-content: center;
 }
 
 .draw_section {
-  padding: 50px 120px;
-  /* min-width: 1440px;
-  max-width: 1440px; */
+  padding: 50px 20px;
+  width: 1200px;
 }
 
 /* ========== back_btn ========== */
@@ -161,4 +161,113 @@ input[type="checkbox"]:checked+label::before {
   height: 16px;
   width: 16px;
   margin: 0px 4px;
+}
+
+/* ========== RWD ========== */
+
+@media screen and (max-width: 1200px) {
+
+  section {
+    min-width: 100%;
+  }
+
+  .draw_section {
+    width: 80vw;
+    padding: 50px 0px;
+  }
+
+}
+
+@media screen and (max-width: 991px) {
+
+  .draw_section {
+    width: 95vw;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+
+  .draw_section {
+    width: 95vw;
+  }
+
+  .contain p {
+    font-size: 18px;
+  }
+
+  .container {
+    height: 160px;
+  }
+
+  .bottom_frame .home {
+    width: 20vw;
+  }
+
+  .btn_frame {
+    margin-left: unset;
+  }
+
+  .bottom_frame {
+    padding: 0px 5vw;
+  }
+
+}
+
+@media screen and (max-width: 576px) {
+
+  .container {
+    height: 280px;
+    flex-wrap: wrap;
+  }
+
+  .back_btn {
+    margin-bottom: 40px;
+  }
+
+  .draw_title span {
+    font-size: 14px;
+  }
+
+  .contain {
+    width: calc(100% / 3);
+  }
+
+  .contain p {
+    margin-top: 30px;
+  }
+
+  .summit_btn {
+    margin-bottom: unset;
+  }
+
+  .hidespan {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 414px) {
+
+  section {
+    min-width: 320px;
+  }
+
+  .draw_section {
+    width: 95vw;
+    min-width: 304px;
+  }
+
+  .container {
+    height: 400px;
+  }
+
+  .contain {
+    width: calc(100% / 2);
+  }
+
+  .draw_title span {
+    font-size: 12px;
+  }
+
 }

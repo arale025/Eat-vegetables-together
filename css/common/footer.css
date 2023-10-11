@@ -158,6 +158,11 @@
     display: none;
   }
 
+  .footer_left .logo img {
+    height: 72px;
+    width: 66.6px;
+  }
+
 }
 
 @media screen and (max-width: 414px) {
