@@ -379,6 +379,10 @@
 
 @media screen and (max-width: 768px) {
 
+  .nav {
+    min-width: 320px;
+  }
+
   .nav_frame {
     width: 90vw;
     margin: 0;
