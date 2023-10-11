@@ -304,3 +304,39 @@ function add_to_cart(list_id, product_name, product_detail, money_id, product_mo
                 </div>`;
   $('.cart_list').prepend(li_str);
 }
+
+
+//側邊購物車 
+
+$(document).ready(function () {
+  // 按按鈕打開選單
+  $('.cartbtn').click(function () {
+    $('body').addClass('opencart');
+    $('header').addClass('blurcart');
+    $('.container').addClass('blurcart');
+    $('.hidecart').addClass('blurcart');
+  });
+  // 按Ｘ關閉選單
+  $('.closecart').click(function (event) {
+    $('body').removeClass('opencart');
+    $('header').removeClass('blurcart');
+    $('.container').removeClass('blurcart');
+    $('.hidecart').removeClass('blurcart');
+  });
+
+  // 按旁邊畫面關掉選單
+
+  $('header').click(function (event) {
+    $('body').removeClass('opencart');
+    $('header').removeClass('blurcart');
+    $('.container').removeClass('blurcart');
+    $('.hidecart').removeClass('blurcart');
+  });
+
+  $('.container').click(function (event) {
+    $('body').removeClass('opencart');
+    $('header').removeClass('blurcart');
+    $('.container').removeClass('blurcart');
+    $('.hidecart').removeClass('blurcart');
+  });
+});

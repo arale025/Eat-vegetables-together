@@ -5,7 +5,6 @@ $(document).ready(function () {
     $('header').addClass('blur');
     $('section').addClass('blur');
     $('footer').addClass('blur');
-    $('.menu::after').addClass('closeafter');
   });
   // 按Ｘ關閉選單
   $('.close').click(function (event) {
