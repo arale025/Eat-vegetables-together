@@ -1,7 +1,13 @@
 section {
-  padding: 50px 160px;
   background-color: #F5F4E9;
   width: 100%;
+  min-width: 1440px;
+}
+
+.byop {
+  padding: 50px 160px;
+  width: 1400px;
+  max-width: 100%;
 }
 
 /* ========== back_btn ========== */
@@ -178,6 +184,7 @@ form {
   text-align: center;
   color: #464646;
   margin-top: 50px;
+  min-width: max-content;
 }
 
 .btn_frame .text {
@@ -219,4 +226,78 @@ form {
 .btn_frame .btn:hover {
   background-color: #DB5331;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.33);
+}
+
+/* ========== RWD ========== */
+@media screen and (max-width: 1439px) {
+  section {
+    min-width: 100%;
+  }
+
+  .byop {
+    padding: 50px 5vw;
+    width: 1200px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  .byop {
+    padding: 50px 5vw;
+    width: 767px;
+  }
+
+  .hide {
+    width: 15vw;
+  }
+
+}
+
+@media screen and (max-width: 576px) {
+
+  .byop {
+    padding: 50px 5vw;
+    width: 576px;
+  }
+
+  .hide {
+    width: 15vw;
+  }
+
+  .byop_title span {
+    font-size: 14px;
+  }
+
+  .radio:checked~.tab_content {
+    max-height: 30rem;
+  }
+
+}
+
+@media screen and (max-width: 413px) {
+
+  section {
+    min-width: 320px;
+  }
+
+  .byop {
+    padding: 50px 5vw;
+    width: 413px;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .byop_title span {
+    font-size: 14px;
+  }
+
+  .back_btn_frame {
+    margin-bottom: 50px;
+  }
+
+  .bottom_frame {
+    justify-content: center;
+  }
 }

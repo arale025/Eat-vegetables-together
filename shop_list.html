@@ -74,131 +74,133 @@
   <div class="header_block"></div>
 
   <section>
-    <div class="container">
-      <a href="./build_your_own_package.html"><button class="btn"><span>訂製專屬蔬菜包</span><img src="./images/icon_go.svg"
-            alt="前往圖示">
-        </button></a>
-      <a href="./vegetable_draw.html"><button class="btn"><span>前往菜菜選擇器</span><img src="./images/icon_go.svg"
-            alt="前往圖示">
-        </button></a>
-      <div class="card">
-        <div class="card_frame">
-          <div class="card_left">
-            <object type="image/svg+xml" data="./images/shoplist_greenpack.svg"></object>
+    <div class="shoplist_section">
+      <div class="container">
+        <a href="./build_your_own_package.html"><button class="btn"><span>訂製專屬蔬菜包</span><img src="./images/icon_go.svg"
+              alt="前往圖示">
+          </button></a>
+        <a href="./vegetable_draw.html"><button class="btn"><span>前往菜菜選擇器</span><img src="./images/icon_go.svg"
+              alt="前往圖示">
+          </button></a>
+        <div class="card">
+          <div class="card_frame">
+            <div class="card_left">
+              <object type="image/svg+xml" data="./images/shoplist_greenpack.svg"></object>
+            </div>
+            <div class="card_right">
+              <h3><span class="product_name">菜菜寶寶蔬菜包</span><br>$ <span class=".product_money">50</span></h3><span
+                class="product_detail">香菇、黑木耳、海帶、青江菜、蚵仔白菜、玉米筍、小黃瓜、絲瓜、馬鈴薯、白蘿蔔</span>
+            </div>
           </div>
-          <div class="card_right">
-            <h3><span class="product_name">菜菜寶寶蔬菜包</span><br>$ <span class=".product_money">50</span></h3><span
-              class="product_detail">香菇、黑木耳、海帶、青江菜、蚵仔白菜、玉米筍、小黃瓜、絲瓜、馬鈴薯、白蘿蔔</span>
+          <div class="card_count">
+            <div class="minus2_frame">
+              <button class="fa-light_minus" id="lightMinusGreen">
+                <img src="./images/icon_light_minus.svg" alt="減號按鈕">
+              </button>
+              <button class="fa fa-minus" onclick="minusGreen()">
+                <img src="./images/icon_black_minus.svg" alt="減號按鈕">
+              </button>
+            </div>
+            <span class="quantity" id="quantityGreen">0</span>
+            <button class="fa fa-plus" onclick="plusGreen()">
+              <img src="./images/icon_black_plus.svg" alt="加號按鈕">
+            </button>
           </div>
         </div>
-        <div class="card_count">
-          <div class="minus2_frame">
-            <button class="fa-light_minus" id="lightMinusGreen">
-              <img src="./images/icon_light_minus.svg" alt="減號按鈕">
-            </button>
-            <button class="fa fa-minus" onclick="minusGreen()">
-              <img src="./images/icon_black_minus.svg" alt="減號按鈕">
+        <div class="card">
+          <div class="card_frame">
+            <div class="card_left">
+              <object type="image/svg+xml" data="./images/shoplist_purplepack.svg"></object>
+            </div>
+            <div class="card_right">
+              <h3><span class="product_name">茄子寶寶蔬菜包</span><br>$ <span class=".product_money">90</span></h3><span
+                class="product_detail">猴頭菇、茄子、冬瓜、秋葵、蘆筍、牛蒡、青椒、苦瓜、洋蔥、龍鬚菜</span>
+            </div>
+          </div>
+          <div class="card_count">
+            <div class="minus2_frame">
+              <button class="fa-light_minus" id="lightMinusPurple">
+                <img src="./images/icon_light_minus.svg" alt="減號按鈕">
+              </button>
+              <button class="fa fa-minus" onclick="minusPurple()">
+                <img src="./images/icon_black_minus.svg" alt="減號按鈕">
+              </button>
+            </div>
+            <span class="quantity" id="quantityPurple">0</span>
+            <button class="fa fa-plus" onclick="plusPurple()">
+              <img src="./images/icon_black_plus.svg" alt="加號按鈕">
             </button>
           </div>
-          <span class="quantity" id="quantityGreen">0</span>
-          <button class="fa fa-plus" onclick="plusGreen()">
-            <img src="./images/icon_black_plus.svg" alt="加號按鈕">
-          </button>
+        </div>
+        <div class="card">
+          <div class="card_frame">
+            <div class="card_left">
+              <object type="image/svg+xml" data="./images/shoplist_yellowpack.svg"></object>
+            </div>
+            <div class="card_right">
+              <h3><span class="product_name">玉米寶寶蔬菜包</span><br>$ <span class=".product_money">65</span></h3><span
+                class="product_detail">小白菜、萵苣、玉米、毛豆、白花椰菜、南瓜、地瓜、金針菇、娃娃菜、水蓮</span>
+            </div>
+          </div>
+          <div class="card_count">
+            <div class="minus2_frame">
+              <button class="fa-light_minus" id="lightMinusYellow">
+                <img src="./images/icon_light_minus.svg" alt="減號按鈕">
+              </button>
+              <button class="fa fa-minus" onclick="minusYellow()">
+                <img src="./images/icon_black_minus.svg" alt="減號按鈕">
+              </button>
+            </div>
+            <span class="quantity" id="quantityYellow">0</span>
+            <button class="fa fa-plus" onclick="plusYellow()">
+              <img src="./images/icon_black_plus.svg" alt="加號按鈕">
+            </button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card_frame">
+            <div class="card_left">
+              <object type="image/svg+xml" data="./images/shoplist_redpack.svg"></object>
+            </div>
+            <div class="card_right">
+              <h3><span class="product_name">番茄寶寶蔬菜包</span><br>$ <span class=".product_money">70</span></h3><span
+                class="product_detail">高麗菜、菠菜、杏鮑菇、番茄、胡蘿蔔、櫛瓜、綠花椰菜、甜菜根、韭菜、竹筍</span>
+            </div>
+          </div>
+          <div class="card_count">
+            <div class="minus2_frame">
+              <button class="fa-light_minus" id="lightMinusRed">
+                <img src="./images/icon_light_minus.svg" alt="減號按鈕">
+              </button>
+              <button class="fa fa-minus" onclick="minusRed()">
+                <img src="./images/icon_black_minus.svg" alt="減號按鈕">
+              </button>
+            </div>
+            <span class="quantity" id="quantityRed">0</span>
+            <button class="fa fa-plus" onclick="plusRed()">
+              <img src="./images/icon_black_plus.svg" alt="加號按鈕">
+            </button>
+          </div>
         </div>
       </div>
-      <div class="card">
-        <div class="card_frame">
-          <div class="card_left">
-            <object type="image/svg+xml" data="./images/shoplist_purplepack.svg"></object>
+      <div class="cart">
+        <div class="cart_header">
+          <div>
+            <span class="pack number" id="totalPack">0</span><span class="pack text">包</span>
           </div>
-          <div class="card_right">
-            <h3><span class="product_name">茄子寶寶蔬菜包</span><br>$ <span class=".product_money">90</span></h3><span
-              class="product_detail">猴頭菇、茄子、冬瓜、秋葵、蘆筍、牛蒡、青椒、苦瓜、洋蔥、龍鬚菜</span>
-          </div>
-        </div>
-        <div class="card_count">
-          <div class="minus2_frame">
-            <button class="fa-light_minus" id="lightMinusPurple">
-              <img src="./images/icon_light_minus.svg" alt="減號按鈕">
-            </button>
-            <button class="fa fa-minus" onclick="minusPurple()">
-              <img src="./images/icon_black_minus.svg" alt="減號按鈕">
-            </button>
-          </div>
-          <span class="quantity" id="quantityPurple">0</span>
-          <button class="fa fa-plus" onclick="plusPurple()">
-            <img src="./images/icon_black_plus.svg" alt="加號按鈕">
-          </button>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card_frame">
-          <div class="card_left">
-            <object type="image/svg+xml" data="./images/shoplist_yellowpack.svg"></object>
-          </div>
-          <div class="card_right">
-            <h3><span class="product_name">玉米寶寶蔬菜包</span><br>$ <span class=".product_money">65</span></h3><span
-              class="product_detail">小白菜、萵苣、玉米、毛豆、白花椰菜、南瓜、地瓜、金針菇、娃娃菜、水蓮</span>
+          <div>
+            <span class="amount number" id="totalPrice">0</span><span class="amount text">元</span>
           </div>
         </div>
-        <div class="card_count">
-          <div class="minus2_frame">
-            <button class="fa-light_minus" id="lightMinusYellow">
-              <img src="./images/icon_light_minus.svg" alt="減號按鈕">
-            </button>
-            <button class="fa fa-minus" onclick="minusYellow()">
-              <img src="./images/icon_black_minus.svg" alt="減號按鈕">
-            </button>
-          </div>
-          <span class="quantity" id="quantityYellow">0</span>
-          <button class="fa fa-plus" onclick="plusYellow()">
-            <img src="./images/icon_black_plus.svg" alt="加號按鈕">
-          </button>
+        <div class="cart_list">
         </div>
-      </div>
-      <div class="card">
-        <div class="card_frame">
-          <div class="card_left">
-            <object type="image/svg+xml" data="./images/shoplist_redpack.svg"></object>
-          </div>
-          <div class="card_right">
-            <h3><span class="product_name">番茄寶寶蔬菜包</span><br>$ <span class=".product_money">70</span></h3><span
-              class="product_detail">高麗菜、菠菜、杏鮑菇、番茄、胡蘿蔔、櫛瓜、綠花椰菜、甜菜根、韭菜、竹筍</span>
-          </div>
-        </div>
-        <div class="card_count">
-          <div class="minus2_frame">
-            <button class="fa-light_minus" id="lightMinusRed">
-              <img src="./images/icon_light_minus.svg" alt="減號按鈕">
-            </button>
-            <button class="fa fa-minus" onclick="minusRed()">
-              <img src="./images/icon_black_minus.svg" alt="減號按鈕">
-            </button>
-          </div>
-          <span class="quantity" id="quantityRed">0</span>
-          <button class="fa fa-plus" onclick="plusRed()">
-            <img src="./images/icon_black_plus.svg" alt="加號按鈕">
+        <div class="cart_btn_frame">
+          <button class="btn">
+            <span>確認訂單</span>
           </button>
         </div>
       </div>
     </div>
-    </div>
-    <div class="cart">
-      <div class="cart_header">
-        <div>
-          <span class="pack number" id="totalPack">0</span><span class="pack text">包</span>
-        </div>
-        <div>
-          <span class="amount number" id="totalPrice">0</span><span class="amount text">元</span>
-        </div>
-      </div>
-      <div class="cart_list">
-      </div>
-      <div class="cart_btn_frame">
-        <button class="btn">
-          <span>確認訂單</span>
-        </button>
-      </div>
   </section>
 
 

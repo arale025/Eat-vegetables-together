@@ -382,7 +382,8 @@
   }
 
   .nav_frame {
-    min-width: 320px;
+    width: 90vw;
+    margin: 0;
   }
 
   .nav .burger {

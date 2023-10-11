@@ -1,8 +1,14 @@
 section {
-  padding: 50px 120px;
   background-color: #F5F4E9;
   width: 100%;
+  min-width: 1440px;
+}
+
+.shoplist_section {
+  padding: 50px 120px;
   display: flex;
+  min-width: 1440px;
+  max-width: 1440px;
 }
 
 .container {
