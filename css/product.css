@@ -669,17 +669,29 @@
   }
 
   .product_section1 {
-    width: 414px;
+    width: 320 px;
     min-width: 320px;
   }
 
   .product_section1 .product_section1_left {
     top: -50px;
-    left: 1vw;
+    left: 10vw;
   }
 
   .pack_container object {
-    width: 70%;
+    width: 80%;
+  }
+
+  .product_section1 .right_down .pack_container {
+    width: 173.6px;
+    height: 253.6px;
+    margin-right: 15vw;
+  }
+
+  .product_section1 .right_down {
+    padding: 0px 10vw 500px 0vw;
+    /* width: 414px;s */
+    justify-content: right;
   }
 
 }

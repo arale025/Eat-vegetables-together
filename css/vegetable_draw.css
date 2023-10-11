@@ -1,13 +1,13 @@
 section {
   background-color: #F5F4E9;
   width: 100%;
-  min-width: 1440px;
+  /* min-width: 1440px; */
 }
 
 .draw_section {
   padding: 50px 120px;
-  min-width: 1440px;
-  max-width: 1440px;
+  /* min-width: 1440px;
+  max-width: 1440px; */
 }
 
 /* ========== back_btn ========== */
