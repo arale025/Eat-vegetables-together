@@ -683,13 +683,13 @@
   }
 
   .product_section1 .right_down .pack_container {
-    width: 173.6px;
-    height: 253.6px;
-    margin-right: 15vw;
+    width: 138.88px;
+    height: 202.88px;
+    margin-right: 25vw;
   }
 
   .product_section1 .right_down {
-    padding: 0px 10vw 500px 0vw;
+    padding: 0px 10vw 530px 0vw;
     /* width: 414px;s */
     justify-content: right;
   }
