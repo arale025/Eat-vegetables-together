@@ -3,6 +3,7 @@ section {
   width: 100%;
   display: flex;
   justify-content: center;
+  overflow: hidden;
 }
 
 .draw_section {

@@ -79,7 +79,7 @@
         <a href="./build_your_own_package.html"><button class="btn"><span>訂製專屬蔬菜包</span><img src="./images/icon_go.svg"
               alt="前往圖示">
           </button></a>
-        <a href="./vegetable_draw.html"><button class="btn"><span>前往菜菜選擇器</span><img src="./images/icon_go.svg"
+        <a href="./vegetable_draw.html"><button class="btn draw"><span>前往菜菜選擇器</span><img src="./images/icon_go.svg"
               alt="前往圖示">
           </button></a>
         <div class="card">
@@ -183,24 +183,37 @@
           </div>
         </div>
       </div>
-      <div class="cart">
-        <div class="cart_header">
-          <div>
-            <span class="pack number" id="totalPack">0</span><span class="pack text">包</span>
-          </div>
-          <div>
-            <span class="amount number" id="totalPrice">0</span><span class="amount text">元</span>
-          </div>
-        </div>
-        <div class="cart_list">
-        </div>
-        <div class="cart_btn_frame">
-          <button class="btn">
-            <span>確認訂單</span>
+      <div class="cart_frame">
+        <div class="back_btn_frame">
+          <button class="closecart">
+            <img src="./images/icon_back.svg" alt="返回圖示">
+            <span>返回</span>
           </button>
+        </div>
+        <div class="cart">
+          <div class="cart_header">
+            <div>
+              <span class="pack number" id="totalPack">0</span><span class="pack text">包</span>
+            </div>
+            <div>
+              <span class="amount number" id="totalPrice">0</span><span class="amount text">元</span>
+            </div>
+          </div>
+          <div class="cart_list">
+          </div>
+          <div class="cart_btn_frame">
+            <button class="btn">
+              <span>確認訂單</span>
+            </button>
+          </div>
         </div>
       </div>
     </div>
+  </section>
+
+  <section class="hidecart">
+    <button class="cartbtn"><span>我的購物車</span><img src="./images/icon_cart.svg" alt="購物車圖示">
+    </button>
   </section>
 
 
