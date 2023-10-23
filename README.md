@@ -1,7 +1,7 @@
 # 菜菜子｜讓您輕鬆享受健康飲食
 Try to solve the problem of insufficient daily vegetable intake and make healthy eating easier.
 
- #### website : [[https://good-rent.com/](https://arale025.github.io/eat-vegetables-together/)](https://arale025.github.io/eat-vegetables-together/)
+ #### website : [https://arale025.github.io/eat-vegetables-together/](https://arale025.github.io/eat-vegetables-together/)
  
 ![image](https://github.com/arale025/eat-vegetables-together/assets/141701851/f4a55247-4907-41d3-a4c8-acc94a075bc7)
 
