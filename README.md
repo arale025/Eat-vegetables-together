@@ -6,18 +6,23 @@ Try to solve the problem of insufficient daily vegetable intake and make healthy
 ![image](https://github.com/arale025/eat-vegetables-together/assets/141701851/f4a55247-4907-41d3-a4c8-acc94a075bc7)
 
 ## Table of Contents
-* [Project theme and motivation](#Project-theme-and-motivation)
+* [Features](#Features)
 * [Sitemap](#Sitemap)
 * [Wireframe and Mockup](#Wireframe-and-Mockup)
 * [Technologies](#Technologies)
 
-## Project theme and motivation
+## Features
+#### Product carousel
 
-![image](https://github.com/arale025/eat-vegetables-together/assets/141701851/7e793f73-fb44-41d4-bc51-cb1246a79e43)
-![image](https://github.com/arale025/eat-vegetables-together/assets/141701851/c056d461-3171-4fc6-8097-522a7e053710)
-![image](https://github.com/arale025/eat-vegetables-together/assets/141701851/17db21e6-abcc-4d73-b8bf-ca9b1da4045a)
-![image](https://github.com/arale025/eat-vegetables-together/assets/141701851/3a442105-a502-41df-900c-2a216433926f)
+![GIF](./images/readme_product_carousel.gif)
 
+#### Shopping cart
+
+![GIF](./images/readme_shoping_cart.gif)
+
+#### Vegetable selector
+
+![GIF](./images/readme_vegetable%20_selector.gif)
 
 ## Sitemap
 
