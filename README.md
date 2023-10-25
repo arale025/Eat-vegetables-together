@@ -22,7 +22,7 @@ Try to solve the problem of insufficient daily vegetable intake and make healthy
 
 #### Vegetable selector
 
-![GIF](./images/readme_vegetable%20_selector.gif)
+![GIF](./images/readme_vegetable_selector.gif)
 
 ## Sitemap
 
