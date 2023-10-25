@@ -8,7 +8,6 @@ Try to solve the problem of insufficient daily vegetable intake and make healthy
 ## Table of Contents
 * [Features](#Features)
 * [Sitemap](#Sitemap)
-* [Wireframe and Mockup](#Wireframe-and-Mockup)
 * [Technologies](#Technologies)
 
 ## Features
@@ -27,13 +26,6 @@ Try to solve the problem of insufficient daily vegetable intake and make healthy
 ## Sitemap
 
 ![image](https://github.com/arale025/eat-vegetables-together/assets/141701851/4e022c00-d57f-43ac-8c6c-2468dcd56764)
-
-## Wireframe and Mockup
-
-![image](https://github.com/arale025/eat-vegetables-together/assets/141701851/0be8598d-fcc7-4cae-91b7-08436ffbe913)
-![image](https://github.com/arale025/eat-vegetables-together/assets/141701851/95afa6aa-cfb8-40ac-b4a7-bdb4e5d058c7)
-![image](https://github.com/arale025/eat-vegetables-together/assets/141701851/77725462-0ef5-4bc7-8902-82899be256ed)
-![image](https://github.com/arale025/eat-vegetables-together/assets/141701851/2a50a404-4722-42ee-91eb-8270efffee6b)
 
 ## Technologies
 #### Front-End
