@@ -2,9 +2,8 @@
 Try to solve the problem of insufficient daily vegetable intake and make healthy eating easier.
 
  #### website : [https://arale025.github.io/eat-vegetables-together/](https://arale025.github.io/eat-vegetables-together/)
- 
-![image](https://github.com/arale025/eat-vegetables-together/assets/141701851/f4a55247-4907-41d3-a4c8-acc94a075bc7)
 
+![image](https://github.com/arale025/eat-vegetables-together/assets/141701851/8eda61c5-8608-407d-99cb-22a86b462f42)
 
 ## Table of Contents
 * [Features](#Features)
@@ -26,8 +25,7 @@ Try to solve the problem of insufficient daily vegetable intake and make healthy
 
 ## Sitemap
 
-![image]![image](https://github.com/arale025/eat-vegetables-together/assets/141701851/ad2a678b-9b32-4990-af67-72d250f51617)
-
+![image](https://github.com/arale025/eat-vegetables-together/assets/141701851/e1d7ce4c-c6f3-47b1-99d4-8a71a5e8c328)
 
 ## Technologies
 #### Front-End
