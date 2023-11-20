@@ -108,17 +108,6 @@
   transform: translateX(0);
 }
 
-/* ========== 免責聲明 area ========== */
-.footer_text {
-  /* border: 1px solid black; */
-  display: block;
-  text-align: center;
-  font-size: 10px;
-  padding: 10px 10px;
-  color: white;
-  background-color: #949494;
-}
-
 /* ========== RWD ========== */
 
 @media screen and (max-width: 1400px) {
